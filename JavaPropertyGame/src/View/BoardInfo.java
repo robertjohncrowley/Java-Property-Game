@@ -5,21 +5,30 @@ import java.awt.Color;
 public class BoardInfo {
 
 	String SquareName, SquareType;
-	int price, mortgage;
+	int price, mortgage, location;
 	Color properyColor;
-	public BoardInfo(String squareName, String squareType, int price, int mortgage, Color properyColor) {
+	
+	public BoardInfo(String squareName, String squareType, int price, int mortgage, Color properyColor, int location) {
 		super();
 		SquareName = squareName;
 		SquareType = squareType;
 		this.price = price;
 		this.mortgage = mortgage;
 		this.properyColor = properyColor;
+		this.location = location;
 	}
+	
 	public String getSquareName() {
 		return SquareName;
 	}
 	public void setSquareName(String squareName) {
 		SquareName = squareName;
+	}
+	public int getLocation() {
+		return location;
+	}
+	public void setLocation(int location) {
+		this.location = location;
 	}
 	public String getSquareType() {
 		return SquareType;
